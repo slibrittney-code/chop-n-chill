@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Chop N Chill</title>
 
   <style>
@@ -28,22 +29,28 @@
     }
 
     .logo {
-      font-size: 24px;
+      font-size: 26px;
       font-weight: 800;
     }
 
     .btn {
       background: #26331f;
       color: white;
-      padding: 14px 22px;
+      padding: 14px 24px;
       border-radius: 999px;
       text-decoration: none;
       display: inline-block;
       font-weight: bold;
+      transition: .2s;
+    }
+
+    .btn:hover {
+      opacity: .9;
+      transform: translateY(-2px);
     }
 
     .hero {
-      padding: 70px 8%;
+      padding: 80px 8%;
       display: grid;
       grid-template-columns: 1.2fr .8fr;
       gap: 40px;
@@ -129,10 +136,17 @@
       text-align: center;
       border-radius: 40px;
       margin: 40px 8%;
+      padding: 70px 8%;
     }
 
     .dark p {
       color: #d8e4cb;
+    }
+
+    .email {
+      margin-top: 12px;
+      font-size: 14px;
+      color: #58664b;
     }
 
     .footer {
@@ -142,6 +156,7 @@
     }
 
     @media (max-width: 850px) {
+
       .hero,
       .grid {
         grid-template-columns: 1fr;
@@ -151,6 +166,7 @@
         flex-direction: column;
         gap: 16px;
       }
+
     }
   </style>
 </head>
@@ -158,16 +174,24 @@
 <body>
 
 <header>
-  <div class="logo">🌿 Chop N Chill</div>
 
-  <a class="btn" href="mailto:chopnchillco@gmail.com">
+  <div class="logo">
+    🌿 Chop N Chill
+  </div>
+
+  <a class="btn"
+     href="mailto:chopnchillco@gmail.com?subject=Chop%20N%20Chill%20Interest">
+
     Join Interest List
+
   </a>
+
 </header>
 
 <section class="hero">
 
   <div>
+
     <div class="badge">
       Farmers market produce made effortless
     </div>
@@ -184,15 +208,26 @@
 
     <br>
 
-    <a class="btn" href="mailto:chopnchillco@gmail.com">
+    <a class="btn"
+       href="mailto:chopnchillco@gmail.com?subject=First%20Order%20Interest">
+
       Get on the first order list
+
     </a>
+
+    <div class="email">
+      chopnchillco@gmail.com
+    </div>
+
   </div>
 
   <div class="hero-card">
+
     <div class="hero-card-inner">
 
-      <h3>This week’s market prep</h3>
+      <h3>
+        This week’s market prep
+      </h3>
 
       <p>
         Peppers • onions • broccoli • carrots • cucumbers • herbs • seasonal extras
@@ -206,13 +241,16 @@
       </ul>
 
     </div>
+
   </div>
 
 </section>
 
 <section>
 
-  <h2>How it works</h2>
+  <h2>
+    How it works
+  </h2>
 
   <p class="subtitle" style="text-align:center;">
     Simple, flexible produce prep built around farmers market season.
@@ -221,30 +259,42 @@
   <div class="grid">
 
     <div class="card">
-      <h3>1. Pick your produce</h3>
+
+      <h3>
+        1. Pick your produce
+      </h3>
 
       <p>
         You shop the farmers market yourself,
         or choose our market shopping add-on.
       </p>
+
     </div>
 
     <div class="card">
-      <h3>2. We prep it</h3>
+
+      <h3>
+        2. We prep it
+      </h3>
 
       <p>
         We wash, chop, sort, and package your produce
         into easy ready-to-use portions.
       </p>
+
     </div>
 
     <div class="card">
-      <h3>3. You chill</h3>
+
+      <h3>
+        3. You chill
+      </h3>
 
       <p>
         Pick up your prepped produce and enjoy
         an easier, healthier week.
       </p>
+
     </div>
 
   </div>
@@ -253,7 +303,9 @@
 
 <section>
 
-  <h2>Starter pricing</h2>
+  <h2>
+    Starter pricing
+  </h2>
 
   <p class="subtitle" style="text-align:center;">
     Early pricing while we test demand and local pickup options.
@@ -263,15 +315,18 @@
 
     <div class="card">
 
-      <h3>You Shop, We Prep</h3>
+      <h3>
+        You Shop, We Prep
+      </h3>
 
       <div class="price">
         Starting at $25
       </div>
 
       <p>
-        You bring the produce. We handle the washing,
-        chopping, sorting, and organizing.
+        You bring the produce.
+        We handle the washing, chopping,
+        sorting, and organizing.
       </p>
 
       <ul>
@@ -284,7 +339,9 @@
 
     <div class="card">
 
-      <h3>Market Shop + Prep</h3>
+      <h3>
+        Market Shop + Prep
+      </h3>
 
       <div class="price">
         Starting at $45 + produce
@@ -292,7 +349,8 @@
 
       <p>
         Tell us what you like.
-        We shop the farmers market and prep everything for you.
+        We shop the farmers market
+        and prep everything for you.
       </p>
 
       <ul>
@@ -305,7 +363,9 @@
 
     <div class="card">
 
-      <h3>Family Prep Box</h3>
+      <h3>
+        Family Prep Box
+      </h3>
 
       <div class="price">
         Starting at $55
@@ -313,7 +373,8 @@
 
       <p>
         A larger prep option for families,
-        couples, or anyone who wants the fridge stocked.
+        couples, or anyone who wants
+        the fridge stocked.
       </p>
 
       <ul>
@@ -335,54 +396,75 @@
   </h2>
 
   <p>
-    Perfect for busy professionals, families,
-    farmers market lovers, and anyone who wants
-    fresh food to feel easier.
+    Perfect for busy professionals,
+    families, farmers market lovers,
+    and anyone who wants fresh food
+    to feel easier.
   </p>
 
   <br>
 
   <a class="btn"
      style="background:white;color:#26331f;"
-     href="mailto:chopnchillco@gmail.com">
+     href="mailto:chopnchillco@gmail.com?subject=Interest%20List">
 
     Join the interest list
 
   </a>
 
+  <div style="margin-top:15px;color:#d8e4cb;">
+    chopnchillco@gmail.com
+  </div>
+
 </section>
 
 <section>
 
-  <h2>Container options</h2>
+  <h2>
+    Container options
+  </h2>
 
   <div class="grid">
 
     <div class="card">
-      <h3>Bring your own</h3>
+
+      <h3>
+        Bring your own
+      </h3>
 
       <p>
-        Use your own containers for a lower-cost,
+        Use your own containers
+        for a lower-cost,
         low-waste option.
       </p>
+
     </div>
 
     <div class="card">
-      <h3>We provide them</h3>
+
+      <h3>
+        We provide them
+      </h3>
 
       <p>
         Add containers for a cleaner,
         more organized prep experience.
       </p>
+
     </div>
 
     <div class="card">
-      <h3>Return discount</h3>
+
+      <h3>
+        Return discount
+      </h3>
 
       <p>
-        Future option: return clean containers
+        Future option:
+        return clean containers
         for a discount on your next order.
       </p>
+
     </div>
 
   </div>

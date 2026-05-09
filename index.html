@@ -1,24 +1,251 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Chop N Chill</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; background: #fbfaf5; color: #27301f; }
-    header { padding: 30px; text-align: center; background: #dce8c9; }
-    section { padding: 40px 20px; max-width: 900px; margin: auto; }
-    h1 { font-size: 42px; }
-    .button { display: inline-block; background: #27301f; color: white; padding: 14px 22px; border-radius: 30px; text-decoration: none; margin-top: 15px; }
-    .card { background: white; padding: 25px; border-radius: 20px; margin: 20px 0; box-shadow: 0 4px 12px rgba(0,0,0,.08); }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fbfaf5;
+      color: #26331f;
+      line-height: 1.6;
+    }
+    header {
+      padding: 24px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #fbfaf5;
+    }
+    .logo { font-size: 24px; font-weight: 800; }
+    .btn {
+      background: #26331f;
+      color: white;
+      padding: 14px 22px;
+      border-radius: 999px;
+      text-decoration: none;
+      display: inline-block;
+      font-weight: bold;
+    }
+    .hero {
+      padding: 70px 8%;
+      display: grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap: 40px;
+      align-items: center;
+    }
+    .badge {
+      display: inline-block;
+      background: #e4efd6;
+      padding: 8px 16px;
+      border-radius: 999px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: clamp(42px, 7vw, 74px);
+      line-height: 1;
+      margin: 0 0 24px;
+    }
+    h2 {
+      font-size: 38px;
+      text-align: center;
+      margin-bottom: 12px;
+    }
+    .hero p, .subtitle {
+      font-size: 19px;
+      color: #58664b;
+    }
+    .hero-card {
+      background: #dce8c9;
+      border-radius: 32px;
+      padding: 32px;
+      box-shadow: 0 20px 40px rgba(0,0,0,.12);
+    }
+    .hero-card-inner {
+      background: white;
+      border-radius: 24px;
+      padding: 24px;
+    }
+    section { padding: 70px 8%; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+      margin-top: 36px;
+    }
+    .card {
+      background: white;
+      border-radius: 28px;
+      padding: 28px;
+      box-shadow: 0 10px 25px rgba(0,0,0,.08);
+    }
+    .card h3 { margin-top: 0; font-size: 24px; }
+    .price {
+      font-size: 30px;
+      font-weight: 900;
+      margin: 10px 0;
+    }
+    ul { padding-left: 20px; }
+    .dark {
+      background: #26331f;
+      color: white;
+      text-align: center;
+      border-radius: 40px;
+      margin: 40px 8%;
+    }
+    .dark p { color: #d8e4cb; }
+    .footer {
+      text-align: center;
+      padding: 30px;
+      color: #58664b;
+    }
+    @media (max-width: 850px) {
+      .hero, .grid {
+        grid-template-columns: 1fr;
+      }
+      header {
+        flex-direction: column;
+        gap: 16px;
+      }
+    }
   </style>
 </head>
+
 <body>
 
 <header>
-  <h1>Chop N Chill</h1>
-  <p>Farmers market produce, washed, chopped, and ready for your week.</p>
-  <a class="button" href="mailto:youremail@example.com">Join the Interest List</a>
+  <div class="logo">🌿 Chop N Chill</div>
+  <a class="btn" href="mailto:youremail@example.com">Join Interest List</a>
 </header>
 
+<section class="hero">
+  <div>
+    <div class="badge">Farmers market produce made effortless</div>
+    <h1>Fresh prep. Less stress.</h1>
+    <p>
+      Chop N Chill turns your farmers market haul into washed, chopped, organized produce
+      that is ready for snacks, salads, soups, stir-fries, roasting, and busy weeks.
+    </p>
+    <br>
+    <a class="btn" href="mailto:youremail@example.com">Get on the first order list</a>
+  </div>
+
+  <div class="hero-card">
+    <div class="hero-card-inner">
+      <h3>This week’s market prep</h3>
+      <p>Peppers • onions • broccoli • carrots • cucumbers • herbs • seasonal extras</p>
+      <ul>
+        <li>Washed</li>
+        <li>Chopped</li>
+        <li>Sorted</li>
+        <li>Ready to use</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
 <section>
-  <h2>Fresh prep. Less stress.</h2>
-  <p>Chop N Chill helps turn your farmers market haul into washed, chopped, organized produce for easy
+  <h2>How it works</h2>
+  <p class="subtitle" style="text-align:center;">Simple, flexible produce prep built around farmers market season.</p>
+
+  <div class="grid">
+    <div class="card">
+      <h3>1. Pick your produce</h3>
+      <p>You shop the farmers market yourself, or choose our market shopping add-on.</p>
+    </div>
+
+    <div class="card">
+      <h3>2. We prep it</h3>
+      <p>We wash, chop, sort, and package your produce into easy ready-to-use portions.</p>
+    </div>
+
+    <div class="card">
+      <h3>3. You chill</h3>
+      <p>Pick up your prepped produce and enjoy an easier, healthier week.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Starter pricing</h2>
+  <p class="subtitle" style="text-align:center;">Early pricing while we test demand and local pickup options.</p>
+
+  <div class="grid">
+    <div class="card">
+      <h3>You Shop, We Prep</h3>
+      <div class="price">Starting at $25</div>
+      <p>You bring the produce. We handle the washing, chopping, sorting, and organizing.</p>
+      <ul>
+        <li>Best starter option</li>
+        <li>Use your own containers</li>
+        <li>Great for busy weeks</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Market Shop + Prep</h3>
+      <div class="price">Starting at $45 + produce</div>
+      <p>Tell us what you like. We shop the farmers market and prep everything for you.</p>
+      <ul>
+        <li>We shop for you</li>
+        <li>Seasonal local produce</li>
+        <li>Premium convenience</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Family Prep Box</h3>
+      <div class="price">Starting at $55</div>
+      <p>A larger prep option for families, couples, or anyone who wants the fridge stocked.</p>
+      <ul>
+        <li>Larger portions</li>
+        <li>Meal-friendly mixes</li>
+        <li>Optional add-ons</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="dark">
+  <h2>Healthy eating without the prep work.</h2>
+  <p>
+    Perfect for busy professionals, families, farmers market lovers, and anyone who wants
+    fresh food to feel easier.
+  </p>
+  <br>
+  <a class="btn" style="background:white;color:#26331f;" href="mailto:youremail@example.com">
+    Join the interest list
+  </a>
+</section>
+
+<section>
+  <h2>Container options</h2>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Bring your own</h3>
+      <p>Use your own containers for a lower-cost, low-waste option.</p>
+    </div>
+
+    <div class="card">
+      <h3>We provide them</h3>
+      <p>Add containers for a cleaner, more organized prep experience.</p>
+    </div>
+
+    <div class="card">
+      <h3>Return discount</h3>
+      <p>Future option: return clean containers for a discount on your next order.</p>
+    </div>
+  </div>
+</section>
+
+<div class="footer">
+  © 2026 Chop N Chill • Fresh prep. Less stress.
+</div>
+
+</body>
+</html>
